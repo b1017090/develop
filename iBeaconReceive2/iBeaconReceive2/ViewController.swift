@@ -8,6 +8,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var beaconUuids: NSMutableArray!
     var beaconDetails: NSMutableArray!
 
+       //json構造体のグローバル変数
+       struct JsonSample : Codable{
+         let uuid : String?
+         let key : String?
+         let name : String?
+         let profile : String?
+  }
+  
     let UUIDList = [
         "00000000-0000-0000-0000-000000000000",
         /*"01000000-0000-0000-0000-000000000000",*/
@@ -31,12 +39,33 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
   @IBOutlet weak var label3: UILabel!
   
+  func JsonGet(){
+        let listUrl = "http://35.184.233.225:8080/sendtest"//jsonを取得するwebページのURL
+        guard let url = URL(string: listUrl) else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        //errorが起きたとき
+          if error != nil {
+                print(error!.localizedDescription)
+            }
+            guard let data = data else { return }
+
+          let json = try? JSONDecoder().decode([JsonSample].self, from: data)//jsonのデコード
+          let encoder = JSONEncoder()
+          encoder.outputFormatting = .prettyPrinted//ここでOptional()を外す
+          let encoded = try! encoder.encode(json)
+          print(String(data: encoded, encoding: .utf8)!)
+        }.resume()
+  }
+  
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         myLocationManager = CLLocationManager()
         myLocationManager.delegate = self
         myLocationManager.desiredAccuracy = kCLLocationAccuracyBest
         myLocationManager.distanceFilter = 1
+        JsonGet()
         let status = CLLocationManager.authorizationStatus()
         print("CLAuthorizedStatus: \(status.rawValue)");
         if(status == .notDetermined) {

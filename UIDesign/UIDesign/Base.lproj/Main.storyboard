@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="99X-LP-iyl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--利用方法選択-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="rootViewController" customModule="UIDesign" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TzL-lx-4UH" userLabel="演奏するimage">
+                                <rect key="frame" x="100" y="108" width="215" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="HBD-9t-ZEx"/>
+                                    <constraint firstAttribute="width" constant="215" id="iTu-er-dPB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wRA-0H-pf2" userLabel="演奏を聴くimage">
+                                <rect key="frame" x="100" y="391" width="215" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="0UW-m0-9eX"/>
+                                    <constraint firstAttribute="height" constant="215" id="R69-Aa-sAj"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptA-ek-iJB" userLabel="演奏する">
+                                <rect key="frame" x="100" y="331" width="214" height="40"/>
+                                <accessibility key="accessibilityConfiguration" label="演奏する"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="q0Q-Pw-TZm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="演奏する"/>
+                                <connections>
+                                    <segue destination="vqm-TO-iec" kind="show" id="whl-8e-yWt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IE2-Ef-2br" userLabel="演奏を聴く">
+                                <rect key="frame" x="100" y="626" width="214" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="演奏を聴く"/>
+                                <connections>
+                                    <segue destination="bHM-GD-22C" kind="show" id="oBZ-gF-8Xg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ptA-ek-iJB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="4Ok-UA-8mF"/>
+                            <constraint firstItem="wRA-0H-pf2" firstAttribute="leading" secondItem="ptA-ek-iJB" secondAttribute="leading" id="9n9-98-KU3"/>
+                            <constraint firstItem="TzL-lx-4UH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Fyg-dp-jz0"/>
+                            <constraint firstItem="TzL-lx-4UH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="UcO-g5-jDh"/>
+                            <constraint firstItem="ptA-ek-iJB" firstAttribute="top" secondItem="TzL-lx-4UH" secondAttribute="bottom" constant="8" symbolic="YES" id="Ukn-zm-7Ti"/>
+                            <constraint firstItem="wRA-0H-pf2" firstAttribute="top" secondItem="ptA-ek-iJB" secondAttribute="bottom" constant="20" id="Vgt-vM-Obh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ptA-ek-iJB" secondAttribute="trailing" constant="100" id="aXJ-Os-lIt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IE2-Ef-2br" secondAttribute="trailing" constant="100" id="crL-MU-8Ao"/>
+                            <constraint firstItem="IE2-Ef-2br" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="eUk-Aj-KZV"/>
+                            <constraint firstItem="IE2-Ef-2br" firstAttribute="top" secondItem="wRA-0H-pf2" secondAttribute="bottom" constant="20" id="yNR-Gx-6ff"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="利用方法選択" id="WtT-nR-yLq"/>
+                    <connections>
+                        <outlet property="sample" destination="TzL-lx-4UH" id="7he-8Y-IjP"/>
+                        <outlet property="sample2" destination="wRA-0H-pf2" id="YKz-Tc-fnc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="119.86607142857142"/>
+        </scene>
+        <!--演奏する-->
+        <scene sceneID="Ywl-4b-b1J">
+            <objects>
+                <viewController id="vqm-TO-iec" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Foj-IQ-MMO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3cB-CX-TPv"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="演奏する" id="mjL-e5-g99"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Em1-N5-EUY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="-241"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="XyZ-Eh-lZK">
+            <objects>
+                <viewController id="PAW-LZ-PjN" customClass="rootViewController" customModule="UIDesign" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gk4-Jg-DEx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beaconを検知しています" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjh-OP-byt">
+                                <rect key="frame" x="87" y="244" width="240" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="YKy-r7-Nub"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mX7-Kk-Sjz">
+                                <rect key="frame" x="87" y="404" width="240" height="220"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icb-g1-AJa">
+                                <rect key="frame" x="184" y="771" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qy6-7Z-dny" firstAttribute="trailing" secondItem="rjh-OP-byt" secondAttribute="trailing" constant="87" id="2mQ-km-MYf"/>
+                            <constraint firstItem="rjh-OP-byt" firstAttribute="leading" secondItem="Qy6-7Z-dny" secondAttribute="leading" constant="87" id="GoJ-0p-gOY"/>
+                            <constraint firstItem="mX7-Kk-Sjz" firstAttribute="leading" secondItem="Qy6-7Z-dny" secondAttribute="leading" constant="87" id="Obi-mz-bci"/>
+                            <constraint firstItem="mX7-Kk-Sjz" firstAttribute="top" secondItem="rjh-OP-byt" secondAttribute="bottom" constant="20" id="QjK-vX-YUz"/>
+                            <constraint firstItem="rjh-OP-byt" firstAttribute="top" secondItem="Qy6-7Z-dny" secondAttribute="top" constant="200" id="exW-En-DA8"/>
+                            <constraint firstItem="Qy6-7Z-dny" firstAttribute="trailing" secondItem="mX7-Kk-Sjz" secondAttribute="trailing" constant="87" id="mhL-9F-ZJO"/>
+                            <constraint firstItem="Qy6-7Z-dny" firstAttribute="bottom" secondItem="mX7-Kk-Sjz" secondAttribute="bottom" constant="238" id="xKV-3b-Qgx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qy6-7Z-dny"/>
+                    </view>
+                    <connections>
+                        <outlet property="sample3" destination="mX7-Kk-Sjz" id="CWk-Rp-eeV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xze-Wx-J19" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1760.8695652173915" y="738.61607142857144"/>
+        </scene>
+        <!--演奏を聴く-->
+        <scene sceneID="D0N-sh-D8c">
+            <objects>
+                <viewController id="bHM-GD-22C" customClass="ListViewController" customModule="UIDesign" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mud-7L-9cQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9qQ-pJ-XO1">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Candidate" id="7K1-qv-VmJ">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7K1-qv-VmJ" id="rgG-HC-Exr">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="bHM-GD-22C" id="y7R-WA-3Qu"/>
+                                    <outlet property="delegate" destination="bHM-GD-22C" id="Xgy-cY-RyY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ct2-cw-95e"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="演奏を聴く" id="gsa-l4-iTC"/>
+                    <connections>
+                        <outlet property="candidate" destination="9qQ-pJ-XO1" id="jbH-4X-xWX"/>
+                        <segue destination="GhQ-cn-Uco" kind="show" identifier="演奏を再生" id="EBU-AP-Kbj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GFQ-E5-YcI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2870" y="469"/>
+        </scene>
+        <!--演奏を再生-->
+        <scene sceneID="f3E-Lh-0lm">
+            <objects>
+                <viewController id="GhQ-cn-Uco" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gwo-Tu-SZf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91W-3Z-hTh">
+                                <rect key="frame" x="107" y="606" width="201" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="演奏者名"/>
+                                <connections>
+                                    <segue destination="teW-Hm-tt2" kind="showDetail" id="jwa-fW-FMs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZg-3y-zez">
+                                <rect key="frame" x="101" y="315" width="213" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="演奏を再生する"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="RKz-vf-sUq"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="演奏を再生" id="hw6-cs-StA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRk-4O-EbI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3713" y="469"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="697-NF-CEg">
+            <objects>
+                <viewController id="teW-Hm-tt2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="azp-fC-Qo0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="演奏者情報をのせる" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWK-xq-XV5">
+                                <rect key="frame" x="20" y="397" width="363" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="IdX-M2-56L"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kdS-RL-URi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4784" y="469"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IhL-QQ-LFt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="99X-LP-iyl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mRk-Jq-js1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3ed-I4-BUh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yxX-yn-xon" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="119.86607142857142"/>
+        </scene>
+    </scenes>
+</document>
