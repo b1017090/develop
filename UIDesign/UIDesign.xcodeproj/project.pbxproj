@@ -18,6 +18,11 @@
 		2559B547237E842300F5B43D /* 29081.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2559B546237E842300F5B43D /* 29081.gif */; };
 		2559B54B237E972D00F5B43D /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559B54A237E972D00F5B43D /* UIImage+Gif.swift */; };
 		2559B54D237E9D5F00F5B43D /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2559B54C237E9D5F00F5B43D /* 1.gif */; };
+		2559B54F2383FC9800F5B43D /* PlayAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2559B54E2383FC9800F5B43D /* PlayAnimation.gif */; };
+		2559B5512383FC9E00F5B43D /* ListenAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2559B5502383FC9E00F5B43D /* ListenAnimation.gif */; };
+		2559B5552384011800F5B43D /* PlayingAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2559B5542384011800F5B43D /* PlayingAnimation.gif */; };
+		2559B5572384039600F5B43D /* PlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559B5562384039600F5B43D /* PlayingViewController.swift */; };
+		2559B559238405FA00F5B43D /* StartPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559B558238405FA00F5B43D /* StartPlayingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +38,11 @@
 		2559B546237E842300F5B43D /* 29081.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 29081.gif; sourceTree = "<group>"; };
 		2559B54A237E972D00F5B43D /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImage+Gif.swift"; path = "../Pods/SwiftGifOrigin/SwiftGifCommon/UIImage+Gif.swift"; sourceTree = "<group>"; };
 		2559B54C237E9D5F00F5B43D /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
+		2559B54E2383FC9800F5B43D /* PlayAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = PlayAnimation.gif; sourceTree = "<group>"; };
+		2559B5502383FC9E00F5B43D /* ListenAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ListenAnimation.gif; sourceTree = "<group>"; };
+		2559B5542384011800F5B43D /* PlayingAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = PlayingAnimation.gif; sourceTree = "<group>"; };
+		2559B5562384039600F5B43D /* PlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingViewController.swift; sourceTree = "<group>"; };
+		2559B558238405FA00F5B43D /* StartPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPlayingViewController.swift; sourceTree = "<group>"; };
 		30030278692AEFED33641CD5 /* Pods_UIDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A6FC497AE26562D7BA21EF /* Pods-UIDesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIDesign.release.xcconfig"; path = "Target Support Files/Pods-UIDesign/Pods-UIDesign.release.xcconfig"; sourceTree = "<group>"; };
 		E9FCAA590C05AEA561C2D97D /* Pods-UIDesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIDesign.debug.xcconfig"; path = "Target Support Files/Pods-UIDesign/Pods-UIDesign.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,13 +85,18 @@
 				25142098237D8D5A00F09B7D /* AppDelegate.swift */,
 				2514209A237D8D5A00F09B7D /* SceneDelegate.swift */,
 				2514209C237D8D5A00F09B7D /* ViewController.swift */,
+				2559B5502383FC9E00F5B43D /* ListenAnimation.gif */,
 				2514209E237D8D5A00F09B7D /* Main.storyboard */,
+				2559B5542384011800F5B43D /* PlayingAnimation.gif */,
+				2559B54E2383FC9800F5B43D /* PlayAnimation.gif */,
 				2559B54C237E9D5F00F5B43D /* 1.gif */,
 				251420A1237D8D5C00F09B7D /* Assets.xcassets */,
 				251420A3237D8D5C00F09B7D /* LaunchScreen.storyboard */,
 				251420A6237D8D5C00F09B7D /* Info.plist */,
 				251420B4237DA9E500F09B7D /* ListViewController.swift */,
 				2559B546237E842300F5B43D /* 29081.gif */,
+				2559B5562384039600F5B43D /* PlayingViewController.swift */,
+				2559B558238405FA00F5B43D /* StartPlayingViewController.swift */,
 			);
 			path = UIDesign;
 			sourceTree = "<group>";
@@ -167,7 +182,10 @@
 				2559B547237E842300F5B43D /* 29081.gif in Resources */,
 				251420A2237D8D5C00F09B7D /* Assets.xcassets in Resources */,
 				2559B54D237E9D5F00F5B43D /* 1.gif in Resources */,
+				2559B5552384011800F5B43D /* PlayingAnimation.gif in Resources */,
 				251420A0237D8D5A00F09B7D /* Main.storyboard in Resources */,
+				2559B54F2383FC9800F5B43D /* PlayAnimation.gif in Resources */,
+				2559B5512383FC9E00F5B43D /* ListenAnimation.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,8 +239,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2514209D237D8D5A00F09B7D /* ViewController.swift in Sources */,
+				2559B559238405FA00F5B43D /* StartPlayingViewController.swift in Sources */,
 				25142099237D8D5A00F09B7D /* AppDelegate.swift in Sources */,
 				251420B5237DA9E500F09B7D /* ListViewController.swift in Sources */,
+				2559B5572384039600F5B43D /* PlayingViewController.swift in Sources */,
 				2559B54B237E972D00F5B43D /* UIImage+Gif.swift in Sources */,
 				2514209B237D8D5A00F09B7D /* SceneDelegate.swift in Sources */,
 			);

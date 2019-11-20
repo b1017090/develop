@@ -1,18 +1,15 @@
 //
-//  ViewController.swift
+//  PlayingViewController.swift
 //  UIDesign
 //
-//  Created by 熊谷峻 on 2019/11/14.
+//  Created by 熊谷峻 on 2019/11/19.
 //  Copyright © 2019 Shun Kuma. All rights reserved.
 //
 
 import UIKit
 import SwiftGifOrigin
 
-class rootViewController: UIViewController {
-
-  @IBOutlet weak var play: UIImageView!
-  @IBOutlet weak var listen: UIImageView!
+class playingViewController: UIViewController {
   
 
   @IBOutlet weak var playing: UIImageView!
@@ -28,12 +25,10 @@ class rootViewController: UIViewController {
   //  imageView.loadGif(name: "29081")
 
     // A UIImageView with async loading from asset catalog(from iOS9)
-        let playAnime = UIImage.gif(name: "PlayAnimation")
-    let listenAnime = UIImage.gif(name: "ListenAnimation")
+
     let playingAnime = UIImage.gif(name: "PlayingAnimation")
 
-    play.image = playAnime
-    listen.image = listenAnime
+    playing.image = playingAnime
   //  sample3.image = image
     }
  
@@ -41,4 +36,3 @@ class rootViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 }
-
