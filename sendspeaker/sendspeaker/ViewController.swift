@@ -6,7 +6,7 @@
 //  Copyright © 2019 Shun Kuma. All rights reserved.
 //
 
-//
+//ここから↓
 import UIKit
 import AVFoundation
 
@@ -20,11 +20,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Bluetooth接続を許可
-        try! AVAudioSession.sharedInstance()
-          .setCategory(.record,
-                       mode: .videoChat,
-                         options: .defaultToSpeaker)
+        // スピーカーからの出力設定（ここのmodeとoptionsの設定でできたりできなかったりするから色々試してください）
+      try! AVAudioSession.sharedInstance().setCategory(.playAndRecord,mode:.spokenAudio,options: .defaultToSpeaker)
         
         let input = engine.inputNode
         let output = engine.mainMixerNode
@@ -43,7 +40,9 @@ class ViewController: UIViewController {
         try! engine.start()
 
     }
-    
+//ここまで書けばオッケー！↑
+  
+  
     // マイクON/OFF用UISwitch
     @IBAction func changeMicState(sw: UISwitch){
         if sw.isOn {

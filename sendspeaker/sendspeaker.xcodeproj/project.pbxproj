@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2545557D23976F9600E42AAE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2545557C23976F9600E42AAE /* AVFoundation.framework */; };
 		25F2E70D239598AD00BAF577 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F2E70C239598AD00BAF577 /* AppDelegate.swift */; };
 		25F2E70F239598AD00BAF577 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F2E70E239598AD00BAF577 /* SceneDelegate.swift */; };
 		25F2E711239598AD00BAF577 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F2E710239598AD00BAF577 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2545557C23976F9600E42AAE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		25F2E709239598AD00BAF577 /* sendspeaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sendspeaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F2E70C239598AD00BAF577 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25F2E70E239598AD00BAF577 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +35,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2545557D23976F9600E42AAE /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2545557B23976F9600E42AAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2545557C23976F9600E42AAE /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		25F2E700239598AC00BAF577 = {
 			isa = PBXGroup;
 			children = (
 				25F2E70B239598AD00BAF577 /* sendspeaker */,
 				25F2E70A239598AD00BAF577 /* Products */,
+				2545557B23976F9600E42AAE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
